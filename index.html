@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="boton.css">
+</head>
+
+<body>
+    <form action="">
+    <div>
+        <h4 class="title">Contacto</h4>
+    </div>
+
+    <div>
+        <p>Nombres:</p>
+        <input type="text" class="field" required=""> <br/>
+    </div>
+
+    <div>
+        <p>Apellidos:</p>
+        <input type="text" class="field" required=""> <br/>
+    </div>
+
+    <div>
+        <p>Teléfono:</p>        
+        <input type="number" maxlength="10" class="field" required="" oninput="maxlengthNumber(this);"> <br/>
+    </div>
+
+    <div>
+        <p>Correo Electrónico:</p>
+        <input type="email" class="field" required=""> <br/>
+    </div>
+
+    <div>
+        <p>Asunto:</p>
+        <input type="text" class="field" required=""> <br/>
+    </div>
+
+    <div>
+        <p>Mensaje:</p>
+        <textarea class="field" required=""></textarea> <br/>
+    </div>
+
+    <div>
+        <input type="checkbox" name="checkbox" id="checkbox" required="">
+        <label for="checkbox"><a href="https://www.clickecotravel.com/politica-privacidad/">Acepto la política de privacidad y tratamiento de datos</a></label>
+    </div>
+
+    <div>
+        <p class="center-content">
+            <input type="submit" class="btn btn-gray" value="Enviar Datos">
+        </p>
+    </div>
+        <script>
+            function maxlengthNumber (obj){
+                console.log(obj.value);
+                if(obj.value.length > obj.maxLength){
+                    obj.value = obj.value.slice(0, obj.maxLength);
+                }                
+            }
+        </script>
+    </form>    
+</body>
+</html>

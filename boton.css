@@ -1,0 +1,68 @@
+body{
+    font-family: Arial; background-color: cadetblue; box-sizing: border-box;
+}
+
+form{  
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #999;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+}
+
+.field{
+    border: solid 1px rgb(167, 167, 167);
+    padding: 10px;
+}
+
+.field:focus{
+    border-color: cadetblue ;
+}
+
+.center-content{            
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    font-size: 13px;
+}
+
+#checkbox{
+    width: 15px;
+}
+
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgb(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-gray{
+    color: white;
+    background-color: cadetblue;
+}
+
+.btn-gray:hover{
+    background-color: rgb(75, 128, 131);
+}
+
+.btn-gray:active{
+    background-color: rgb(74, 118, 119);
+}
